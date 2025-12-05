@@ -45,17 +45,3 @@ summary(mod_2015)$coefficients["LogPBI", "Pr(>|t|)"]
 summary(mod_2019)$coefficients["LogPBI", "Pr(>|t|)"]
 summary(mod_2021)$coefficients["LogPBI", "Pr(>|t|)"]
 
-
-#guardar tablas finales
-
-write.csv(df_2015,
-          "C:/Users/Usuario/Downloads/TP CDD/df_2015.csv",
-          row.names = FALSE)
-
-write.csv(df_2019,
-          "C:/Users/Usuario/Downloads/TP CDD/df_2019.csv",
-          row.names = FALSE)
-
-write.csv(df_2021,
-          "C:/Users/Usuario/Downloads/TP CDD/df_2021.csv",
-          row.names = FALSE)
