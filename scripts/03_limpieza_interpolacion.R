@@ -93,30 +93,6 @@ pbi_interpolado  <- interpolar_tabla(pbi_alineado)
 desempleo_interpolado  <- interpolar_tabla(desempleo_alineado)
 
 
-#guardar tablas
-carpeta_clean <- "C:/Users/Usuario/Downloads/TP Final CDD/data/clean"
 
-# Guardar cada tabla
-write.csv(gini_no_faltantes, 
-          file = file.path(carpeta_clean, "gini_no_faltantes.csv"),
-          row.names = FALSE)
-
-write.csv(pbi_alineado, 
-          file = file.path(carpeta_clean, "pbi_alineado.csv"),
-          row.names = FALSE)
-
-write.csv(ingreso_low_20_alineado, 
-          file = file.path(carpeta_clean, "ingreso_low_20_alineado.csv"),
-          row.names = FALSE)
-
-write.csv(pobreza_alineada, 
-          file = file.path(carpeta_clean, "pobreza_alineada.csv"),
-          row.names = FALSE)
-
-write.csv(desempleo_alineado, 
-          file = file.path(carpeta_clean, "desempleo_alineado.csv"),
-          row.names = FALSE)
-
-cat("Archivos guardados correctamente en la carpeta CLEAN ✔️\n")
 
 
