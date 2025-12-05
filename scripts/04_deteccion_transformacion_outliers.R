@@ -55,30 +55,5 @@ pbi_log <- log_transformar_pbi(pbi_interpolado)
 
 pobreza_winsor <- winsorizar_pobreza(pobreza_interpolado, p = 0.05)
 
-#Guardar tablas
-carpeta_processed <- "C:/Users/Usuario/Downloads/TP Final CDD/data/processed"
 
-# Guardar cada tabla
-
-write.csv(gini_interpolado,
-          file = file.path(carpeta_processed, "gini_interpolado.csv"),
-          row.names = FALSE)
-
-write.csv(pobreza_winsor,
-          file = file.path(carpeta_processed, "pobreza_winsor.csv"),
-          row.names = FALSE)
-
-write.csv(ingreso_low_20_interpolado,
-          file = file.path(carpeta_processed, "ingreso_low_20_interpolado.csv"),
-          row.names = FALSE)
-
-write.csv(pbi_log,
-          file = file.path(carpeta_processed, "pbi_log.csv"),
-          row.names = FALSE)
-
-write.csv(desempleo_interpolado,
-          file = file.path(carpeta_processed, "desempleo_interpolado.csv"),
-          row.names = FALSE)
-
-cat("Archivos guardados correctamente en la carpeta PROCESSED ✔️\n")
 
