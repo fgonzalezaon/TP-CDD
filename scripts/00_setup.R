@@ -1,3 +1,7 @@
+# =============================================================================
+# Descargar + extraer Proyect.zip con archivos + RStudio Project File
+# =============================================================================
+
 rm(list = ls())
 
 options(stringsAsFactors = FALSE)
@@ -24,4 +28,5 @@ for (d in dirs) {
 }
 
 cat("✅ Setup cargado correctamente.\n")
+
 cat("📁 Directorio del proyecto:", proyecto_dir, "\n")
